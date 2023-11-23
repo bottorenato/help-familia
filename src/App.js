@@ -1,8 +1,9 @@
 import './App.css';
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+import withAuthenticator  from 'aws-amplify-react-native';
 
-import { withAuthenticator, AmplifySignout }  from '@aws-amplify/ui-react';
-
-Amplify.configure(awsConfig);
+Amplify.configure(config);
 
 function App() {
   return (
