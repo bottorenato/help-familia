@@ -1,5 +1,5 @@
 import './App.css';
-import Amplify from 'aws-amplify';
+import {Amplify} from 'aws-amplify';
 import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import config from './amplifyconfiguration.json';
