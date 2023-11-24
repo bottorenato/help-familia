@@ -4,8 +4,6 @@ import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import config from './amplifyconfiguration.json';
 
-export default withAuthenticator(App);
-
 Amplify.configure(config);
 
 function App() {
@@ -19,3 +17,5 @@ function App() {
   
   );
 }
+
+export default withAuthenticator(App);
