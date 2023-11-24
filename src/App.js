@@ -1,7 +1,10 @@
 import './App.css';
 import Amplify from 'aws-amplify';
-import config from './aws-exports';
-import withAuthenticator  from 'aws-amplify-react-native';
+import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import config from './amplifyconfiguration.json';
+
+export default withAuthenticator(App);
 
 Amplify.configure(config);
 
